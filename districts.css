@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  /* background-image:url("images/kathakaliillu.png"); */
+  background-size: cover;
+
+  /* background-repeat: no-repeat */
+}
+
+.navbar {
+  padding: 20px;
+}
+a:link,
+a:visited {
+  color: rgb(123, 104, 104);
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.5mm;
+}
+
+a:hover,
+a:active {
+  color: rgb(0, 0, 0) !important;
+  /* background-color:whitesmoke; */
+  text-decoration: line;
+}
+.geobg {
+  background-color: black;
+}
+
+.rimg {
+  border-radius: 1.5rem;
+}
+.col-left {
+  position: relative;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-right: 280px;
+  display: flex;
+}
+.col-right {
+  position: absolute;
+  padding-top: 0px;
+  padding-left: 600px;
+}
+
+.dfont {
+  font-family: "Lato", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.3mm;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+}
+
+/* alappuzha */
+.bgp {
+  background-image: url(images/kathakaliillu.png);
+}
+
+.aa:hover {
+  color: rgb(54, 56, 58) !important;
+}
+
+
+.rcol{
+  display: flex;
+}
+
+
+@media (max-width:760px)
+{
+.rcol{
+  display: block;
+}
+}
+@media (max-width:900px)
+{
+
+  .rrow
+  {
+    flex-wrap: nowrap !important;
+   
+  }
+}
+@media (max-width:900px)
+{
+
+  .rrow2
+  {
+    display: grid;
+    padding: 25px;
+  }
+}
