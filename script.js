@@ -65,13 +65,16 @@ function validate() {
 
 //login validation
 function login_validate() {
-  let login_emailid = document.getElementById("login_email");
-  let login_passwordid = document.getElementById("login_password");
-
-  let emailid =
-    /^([A-Za-z0-9\.-]+)@([A-Za-z0-9-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
+  let login_emailid = document.getElementById("login_email").value;
+  let login_passwordid = document.getElementById("login_password").value;
+  console.log(login_emailid)
+  let emailid = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9-]+)\.([a-z]{2,3})(.[a-z]{2,3})?$/;
   if (login_emailid.value != "" && login_passwordid.value != "") {
+    
+    const ex = emailid.test(login_emailid)
+    console.log(ex)
     if (emailid.test(login_emailid)) {
+
       alert("All type of validation has done on OnSubmit event.");
       return true;
     } else {
